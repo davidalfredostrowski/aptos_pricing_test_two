@@ -1,0 +1,60 @@
+ ls
+    2  sudo apt-get update
+    3  sudo apt-get install -y ca-certificates curl gnupg
+    4  sudo mkdir -p /etc/apt/keyrings
+    5  curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+    6  NODE_MAJOR=20
+    7  echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+    8  sudo apt-get update
+    9  sudo apt-get install nodejs -y
+   10  node -v
+   11  npm i aptos
+   12  sudo npm install -g pnpm
+   13  sudo apt install python3-pip
+   14  pip3 install aptos-sdk
+   15  git clone https://github.com/aptos-labs/aptos-core.git
+   16  cd aptos-core/aptos-move/move-examples/hello_blockchain
+   17  history
+   18  pnpm install
+   19  ls
+   20  cd sources
+   21  ls
+   22  rm *
+   23  ls
+   24  vi Pricing.move
+   25  cd ..
+   26  ls
+   27  vi Move.toml
+   28  ls
+   29  cd sources
+   30  ls
+   31  vi Pricing.move
+   32  cd ..
+   33  ls
+   34  mkdir test
+   35  cd test
+   36  git clone https://github.com/aptos-labs/aptos-core.git
+   37  cd aptos-core/aptos-move/move-examples/hello_blockchain
+   38  cd sources/
+   39  ls
+   40  vi hello_blockchain.move
+   41  cd ..
+   42  cd .
+   43  cd ..
+   44  ls
+   45  cd aptos-core/aptos-move/move-examples/hello_blockchain
+   46  ls
+   47  cd sources
+   48  ls
+   49  cp Pricing.move   hello_pricing.move
+   50  vi hello_pricing.move
+   51  ls
+   52  rm Pricing.move
+   53  cd ..
+   54  ls
+   55  vi Move.toml
+   56  ls
+   57  cd ..
+   58  ls
+   59  curl -fsSL "https://aptos.dev/scripts/install_cli.py" | python3
+   60  history
