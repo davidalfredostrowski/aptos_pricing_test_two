@@ -58,3 +58,27 @@
    58  ls
    59  curl -fsSL "https://aptos.dev/scripts/install_cli.py" | python3
    60  history
+
+
+
+
+
+ubuntu@ip-172-31-32-77:~$  /home/ubuntu/.local/bin/aptos init
+Configuring for profile default
+Choose network from [devnet, testnet, mainnet, local, custom | defaults to devnet]
+devnet
+Enter your private key as a hex literal (0x...) [Current: None | No input: Generate new key (or keep one if present)]
+
+No key given, generating key...
+Account 0x0dbc41917d75d4027d530f9d29759a9bdfd611d9acc2955b2c0e66bc17809887 doesn't exist, creating it and funding it with 100000000 Octas
+Account 0x0dbc41917d75d4027d530f9d29759a9bdfd611d9acc2955b2c0e66bc17809887 funded successfully
+
+---
+Aptos CLI is now set up for account 0x0dbc41917d75d4027d530f9d29759a9bdfd611d9acc2955b2c0e66bc17809887 as profile default!  Run `aptos --help` for more information about commands
+{
+  "Result": "Success"
+}
+
+
+
+
