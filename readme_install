@@ -80,5 +80,28 @@ Aptos CLI is now set up for account 0x0dbc41917d75d4027d530f9d29759a9bdfd611d9ac
 }
 
 
+# it worked in the first few runs then the devnet 'move run' gave me this error: 
+# I will try to republish and try again!
+
+
+ubuntu@ip-172-31-32-77:~/aptos-core/aptos-move/move-examples/hello_blockchain/sources$ /home/ubuntu/.local/bin/aptos    move run --function-id 'default::price_oracle::update_price_feed' --args 'string:APT/USDC'    u128:691000000  u128:1000
+{
+  "Error": "Simulation failed with status: Execution failed in 0xd41beef6b00b6a8c4d29a94dd8cb5757593d6a8f399f9d617cd4466e939b9e::price_oracle::update_price_feed at code offset 4"
+}
+ubuntu@ip-172-31-32-77:~/aptos-core/aptos-move/move-examples/hello_blockchain/sources$ /home/ubuntu/.local/bin/aptos    move run --function-id 'default::price_oracle::publish' --args   u64:3
+{
+  "Error": "Simulation failed with status: Execution failed in 0xd41beef6b00b6a8c4d29a94dd8cb5757593d6a8f399f9d617cd4466e939b9e::price_oracle::publish at code offset 3"
+}
+ubuntu@ip-172-31-32-77:~/aptos-core/aptos-move/move-examples/hello_blockchain/sources$ /home/ubuntu/.local/bin/aptos    move run --function-id 'default::price_oracle::publish' --args   u64:3
+{
+  "Error": "Simulation failed with status: Execution failed in 0xd41beef6b00b6a8c4d29a94dd8cb5757593d6a8f399f9d617cd4466e939b9e::price_oracle::publish at code offset 3"
+}
+
+
+
+
+
+
+
 
 
