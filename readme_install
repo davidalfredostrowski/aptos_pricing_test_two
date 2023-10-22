@@ -99,6 +99,30 @@ ubuntu@ip-172-31-32-77:~/aptos-core/aptos-move/move-examples/hello_blockchain/so
 
 
 
+ubuntu@ip-172-31-32-77:~/aptos-core/aptos-move/move-examples/hello_blockchain$ /home/ubuntu/.local/bin/aptos    move run --function-id 'default::price_oracle::update_price_feed' --args 'string:APT/USDC'    u128:691000000  u128:1000
+Do you want to submit a transaction for a range of [50300 - 75400] Octas at a gas unit price of 100 Octas? [yes/no] >
+yes
+{
+  "Result": {
+    "transaction_hash": "0x4becf1ac9c34818d8a4790fff55409cb7833582b25dc404da390cbe4b2163e90",
+    "gas_used": 503,
+    "gas_unit_price": 100,
+    "sender": "b147e60759e32d0cbb739713ca79d717f51f5713ab3066cb31abf4168283a69e",
+    "sequence_number": 2,
+    "success": true,
+    "timestamp_us": 1697943372774672,
+    "version": 5047157,
+    "vm_status": "Executed successfully"
+  }
+}
+
+
+
+# for whatever reasons i cannot do successive runs the the 'move run' command.
+ubuntu@ip-172-31-32-77:~/aptos-core/aptos-move/move-examples/hello_blockchain$ /home/ubuntu/.local/bin/aptos    move run --function-id 'default::price_oracle::update_price_feed' --args 'string:APT/USDC'    u128:531000000  u128:9900
+{
+  "Error": "Simulation failed with status: Execution failed in 0xb147e60759e32d0cbb739713ca79d717f51f5713ab3066cb31abf4168283a69e::price_oracle::update_price_feed at code offset 4"
+}
 
 
 
